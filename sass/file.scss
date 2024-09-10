@@ -1,0 +1,129 @@
+$light-orange: #FFAB08;
+$orange: #FF7020;
+$black: #000000;
+$white: #F9F9F9;
+$gray: #F2F2F3;
+
+@font-face {
+    font-family: "Nunito";
+    src: url('../fonts/Nunito-VariableFont_wght.ttf');
+}
+
+body{
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+.container {
+    max-width: 1230px;
+    margin: 0 auto;
+}
+
+// header start 
+.wrapper-orange{
+    background-image: url('../images/bg-image.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+.header {
+    padding-bottom: 27px;
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .header__logo-wrapper{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        cursor: pointer;
+        .logo-text{
+            font-weight: 800;
+            font-size: 30px;
+            line-height: 120%;
+            color: $white;
+        }
+    }
+}
+
+
+// header end 
+
+// cover start 
+.cover {
+    .container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 21px;
+        color: $white;
+        padding-bottom: 80px;
+        .cover__text-box{
+            
+            .cover-title{
+                font-weight: 800;
+                font-size: 50px;
+                line-height: 120%;
+                max-width: 430px;
+                .orange-text{
+                    color: #ff5c00;
+                }
+            }
+            .cover-subtitle{
+                margin-top: 52px;
+                font-weight: 400;
+                font-size: 16px;
+                .weight-price{
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+// cover end 
+
+// main start
+
+.main{
+    .container {
+        .categories{
+            padding: 40px 0 50px 0;
+            ul {
+            
+                display: flex;
+                flex-direction: row;
+                gap: 24px;
+                .active {
+                    background-color: $light-orange;
+                }
+                li {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 8px;
+                    width: 126px;
+                    height: 40px;
+                    border-radius: 50px;
+                    background-color: $white;
+
+                }
+            }
+        }
+    }
+}
+
+
+
+// main end 
